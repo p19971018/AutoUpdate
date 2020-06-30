@@ -74,18 +74,18 @@ static SftpConnParam connParam = new SftpConnParam.Builder().host("127.0.0.1").p
 2.  LocalPushPapers：将本地文件上传至服务器
 
 ```
-public static void main(String[] args) throws JSchException, IOException {
-                TaskResult<?> pullPapers = new PapersOperatAchieve().executeOperat(new LocalPushPapers(connParam, papersParma));
-	}
+
+TaskResult<?> pullPapers = new PapersOperatAchieve().executeOperat(new LocalPushPapers(connParam, papersParma));
+
 ```
 
 3.  LocalPullPapers：将服务器文件拉取至本地
 
 
 ```
-public static void main(String[] args) throws JSchException, IOException {
-                TaskResult<?> pullPapers = new PapersOperatAchieve().executeOperat(new LocalPullPapers(connParam, papersParma));
-	}
+
+TaskResult<?> pullPapers = new PapersOperatAchieve().executeOperat(new LocalPullPapers(connParam, papersParma));
+
 ```
 示例参考测试类
 
